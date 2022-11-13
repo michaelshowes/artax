@@ -1,0 +1,63 @@
+{
+  "name": "artax",
+  "version": "6.0.9",
+  "description": "CLI for Interactive Strategies",
+  "repository": "git@bitbucket.org:interactivestrategies/artax-cli.git",
+  "main": "artax.js",
+  "author": "Jameel Moses",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "artax": "./artax.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "volta": {
+    "node": "16.18.0"
+  },
+  "config": {
+    "staticHtml": {
+      "label": "Static HTML",
+      "generator": "inc/blueprints/new/static-html.js",
+      "repo": "ssh://git@bitbucket.org/interactivestrategies/falcore-fe-boilerplate.git",
+      "branches": [
+        "main"
+      ]
+    },
+    "wordpress": {
+      "label": "WordPress",
+      "generator": "inc/blueprints/new/wordpress.js",
+      "repo": "ssh://git@bitbucket.org/interactivestrategies/wordpress-boilerplate.git",
+      "branches": [
+        "main",
+        "static-first"
+      ]
+    },
+    "drupal": {
+      "label": "Drupal",
+      "repo": "ssh://git@bitbucket.org/interactivestrategies/drupal-boilerplate.git",
+      "branches": [
+        "drupal9"
+      ]
+    }
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudformation": "^3.51.0",
+    "chalk": "^5.0.0",
+    "change-case": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.0.0",
+    "figlet": "^1.4.0",
+    "fs-extra": "^10.0.0",
+    "glob": "^8.0.3",
+    "inquirer": "^9.1.4",
+    "lower-case": "^2.0.1",
+    "renamer": "^4.0.0",
+    "replace-in-file": "^6.0.0",
+    "shelljs": "^0.8.5",
+    "title-case": "^3.0.2",
+    "validate-npm-package-name": "^5.0.0"
+  }
+}
